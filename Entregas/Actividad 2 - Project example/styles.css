@@ -1,0 +1,110 @@
+/* ===== Base ===== */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.5;
+  padding-bottom: 64px; /* para que el footer fijo no tape contenido */
+}
+
+/* ===== Header ===== */
+.site-header {
+  background: #0057b8;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+}
+.subtitle { opacity: .85; }
+
+/* ===== Nav (flex) ===== */
+.site-nav {
+  background: #eaeaea;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  padding: 12px;
+}
+.site-nav a {
+  color: #0057b8;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+.site-nav a:hover { background: #d0e6ff; }
+
+/* ===== Layout principal ===== */
+.container { max-width: 1200px; margin: 0 auto; padding: 16px; }
+.page {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+
+/* ===== Grid responsive ===== */
+.grid {
+  display: grid;
+  gap: 16px;
+  /* Mobile-first: 1 columna */
+}
+
+/* ≥600px: 2 columnas */
+@media (min-width: 600px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ≥900px: 3 columnas */
+@media (min-width: 900px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ===== Cards + botones ===== */
+.card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 16px;
+}
+.btn-row { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.btn {
+  background: #0057b8;
+  color: #fff;
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn:hover { filter: brightness(1.35); }
+.btn:active { transform: translateY(1px); }
+.btn-muted { background: #777; }
+
+/* ===== Footer (fijo) ===== */
+.site-footer {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  font-size: .9rem;
+  padding: 10px 0;
+}
+
+/* ===== Responsive pequeños ajustes ===== */
+@media (max-width: 900px) {
+  .page { padding: 12px; }
+}
+@media (max-width: 600px) {
+  .site-header, .site-nav, .container { padding: 8px; }
+}
+
+/* ===== Modo oscuro sencillo ===== */
+body.dark { background: #111; color: #eee; }
+body.dark .site-header { background: #003f86; }
+body.dark .page { background: #161616; box-shadow: none; }
+body.dark .card { background: #1a1a1a; border-color: #2a2a2a; }
+body.dark .site-nav { background: #1f1f1f; }
+body.dark .site-nav a:hover { background: #2a2a2a; }
+body.dark .site-footer { background: #000; color: #ccc; }

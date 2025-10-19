@@ -1,0 +1,29 @@
+body {
+  margin: 0; /* Elimina el margen exterior que el navegador pone por defecto. Gracias a esto, tu cabecera azul ahora toca los bordes de la ventana. */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: #f9f9f9; /* Define el color de fondo global de la página. En este caso, es un gris muy claro, que a menudo resulta más cómodo para la vista que el blanco puro. */
+  color: #222; /* Fija el color de texto por defecto para toda la web. */
+  line-height: 1.5; /* Un valor de 1.5 crea un espacio entre líneas que es un 50% más grande que el tamaño de la propia letra, haciendo los párrafos más fáciles de leer. */
+  padding-bottom: 64px; /* para que el footer fijo no tape contenido */
+}
+
+.site-header {
+  box-sizing: border-box;
+  background: #74c9eb;
+  text-align: center;
+  padding: 16px;
+  font-size: 30px;
+}
+
+.subtitle {
+  font-size: 30px;
+}
+
+.nav-bar {
+  background: #eaeaea;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 102px;
+  justify-content: center;
+  padding: 12px;
+}

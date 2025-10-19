@@ -1,0 +1,85 @@
+const products = [
+    {
+        id: 1,
+        name: "Half",
+        price: 5000.00,
+        description: "Half-human, hal- android. The best option to Special operations within enemhy field",
+        category: "Hybrid",
+        imageUrl: "/1-Half.jpg"
+    },
+    {
+        id: 2,
+        name: "Spirit",
+        price: 2499.99,
+        description: "Spirit-type android to spy the enemy",
+        category: "Spirit",
+        imageUrl: "/2-Spirit.jpg",
+    },
+    {
+        id: 3,
+        name: "CRE",
+        price: 8599.00,
+        description: "Counter-repressive entities. The most powerful Android.",
+        category: "Hybrid",
+        imageUrl: "/3-CRE.jpg",
+    },
+    {
+        id: 4,
+        name: "Hybridroid",
+        price: 1200.00,
+        description: "Basic humanoid-android unit for elementary enemy-territory incursion exercises",
+        category: "Hybrid",
+        imageUrl: "/4-Hybridroid.jpg",
+    },
+    {
+        id: 5,
+        name: "Dysmorphic",
+        price: 6000.00,
+        description: "Dangerous human-hunting android spider",
+        category: "Sentinel",
+        imageUrl: "/5-Dysmorphic.jpg",
+    },
+    {
+        id: 6,
+        name: "Octo",
+        price: 7500.00,
+        description: "Sentinel android with extendable arms designed to capture both android and human prey",
+        category: "Sentinel",
+        imageUrl: "/6-Octo.jpg",
+    },
+    {
+        id: 7,
+        name: "Plasma",
+        price: 3300.33,
+        description: "Android with extendable arms and a plasma belly that can fire energy beams to fry the enemy",
+        category: "Sentinel",
+        imageUrl: "/7-Plasma.jpg",
+    },
+    {
+        id: 8,
+        name: "Viuda",
+        price: 8000.00,
+        description: "Weapons storage and transport android. It also features basic defensive weapons such as red laser beams",
+        category: "Sentinel",
+        imageUrl: "/8-Viuda.jpg",
+    },
+    {
+        id: 9,
+        name: "Hal",
+        price: 4000.00,
+        description: "Brute-force android for downing aircraft and neutralizing ground personnel.",
+        category: "Spirit",
+        imageUrl: "/9-Hal.jpg",
+    },
+    {
+        id: 10,
+        name: "Alvvy",
+        price: 10000.00,
+        description: "Androidic/spiritual entity designed to take down enemy blockchain networks. The most powerful android ever devised",
+        category: "Spirit",
+        imageUrl: "/10-Alvvy.jpg",
+    },
+];
+
+export default products;
+

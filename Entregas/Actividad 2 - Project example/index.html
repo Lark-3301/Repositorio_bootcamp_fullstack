@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Semana 2 — Ejemplos JS (CSS + JS separado)</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Ejemplos JavaScript (Semana 2)</h1>
+      <p class="subtitle">
+        CSS puro + JS básico (código JS en archivo separado)
+      </p>
+    </header>
+
+    <!-- (Opcional) Navegación: si no la usas, quita el bloque nav -->
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="equipo.html">Equipo</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="page container">
+      <!-- GRID responsive: 1 col en móvil, 2 col ≥600px, 3 col ≥900px -->
+      <div class="grid">
+        <!-- Ejemplo 1: Modo oscuro / claro -->
+        <section class="card">
+          <h2>1) Modo oscuro / claro</h2>
+          <p>Pulsa para alternar el tema de la página.</p>
+          <button id="themeBtn" class="btn">🌙 Cambiar tema</button>
+        </section>
+
+        <!-- Ejemplo 2: Contador (+ y reset) -->
+        <section class="card">
+          <h2>2) Contador (+ y reset)</h2>
+          <p>Contador: <span id="counter">0</span></p>
+          <div class="btn-row">
+            <button id="addBtn" class="btn">➕ Sumar</button>
+            <button id="resetBtn" class="btn btn-muted">🔄 Reset</button>
+          </div>
+        </section>
+
+        <!-- Ejemplo 3: Botón con alerta -->
+        <section class="card">
+          <h2>3) Botón con alerta</h2>
+          <p>Al hacer clic se muestra una alerta del navegador.</p>
+          <button id="alertBtn" class="btn">Mostrar alerta</button>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <small>© 2025 — Ejemplos de práctica</small>
+    </footer>
+  </body>
+</html>

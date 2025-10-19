@@ -1,0 +1,39 @@
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.class-header {
+    display: flex;
+    background-color: aquamarine;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-style: bold;
+}
+
+.product {
+
+}
+
+.product-img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain; /* Esta propiedad le dice al navegador: "Rellena todo el espacio (100% de ancho y 250px de alto), manteniendo la proporción. Si para eso tienes que recortar la imagen por arriba/abajo o por los lados, hazlo." Y eso es justo lo que te pasa. */
+    border-radius: 8px;
+    background-color: #f0f0f0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Analogía simple: Imagina que el contenedor <main> es una tarta 🎂. La regla repeat(3, 1fr) es la instrucción de "corta la tarta en 3 trozos idénticos". Cada columna (.product) se comerá uno de esos trozos. */
+    gap: 20px;
+    padding: 20px;
+}
+
+main h2 {
+    grid-column: 1 / -1; /* Esta línea le dice a un item hijo que se expanda horizontalmente para ocupar todo el espacio, desde la primera línea de la rejilla (1) hasta la última (-1). */
+    text-align: center; /* 2. Centra el texto */
+}
