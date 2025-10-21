@@ -5,7 +5,7 @@ const products = [
         price: 5000.00,
         description: "Half-human, hal- android. The best option to Special operations within enemhy field",
         category: "Hybrid",
-        imageUrl: "/1-Half.jpg"
+        photo: "/1-Half.jpg"
     },
     {
         id: 2,

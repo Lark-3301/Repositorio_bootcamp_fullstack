@@ -1,6 +1,6 @@
 function Product({ id, name, price, description, category, imageUrl }) {
     return (
-        <div key={id} className="product">
+        <div className="product">
             <h2 className="product-name">{name}</h2>
             <div className="div-category-price">
                 <p className="product-category">Category: {category}</p>
