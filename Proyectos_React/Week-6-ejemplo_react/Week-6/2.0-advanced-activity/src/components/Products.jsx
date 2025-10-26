@@ -7,7 +7,6 @@ function Products() {
   // Local state keeps the cart contents and visibility in sync across components.
   const [shoppingCart, setShoppingCart] = useState([]); //Add inside of this array some items to simulate a pre-filled cart
   const [showCart, setShowCart] = useState(false);
-
   function addToShoppingCart(product) {
     setShoppingCart((currentCart) => [...currentCart, product]);
   }
